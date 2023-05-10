@@ -1,4 +1,4 @@
-package fi.tuni.androidapp
+package fi.tuni.androidapp.customFunctions
 import java.io.BufferedInputStream
 
 import java.io.InputStream

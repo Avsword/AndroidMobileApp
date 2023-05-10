@@ -7,7 +7,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import kotlin.concurrent.thread
 
-fun updateCall(person: fi.tuni.androidapp.Person, callback: (responseCode:Int)->Unit){
+fun updateCall(person: fi.tuni.androidapp.customFunctions.Person, callback: (responseCode:Int)->Unit){
     thread {
         var jsonPerson = JSONObject()
         jsonPerson.put("id", person.id)

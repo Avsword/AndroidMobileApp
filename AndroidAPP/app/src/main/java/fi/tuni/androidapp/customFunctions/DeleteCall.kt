@@ -1,7 +1,7 @@
 package fi.tuni.androidapp.customFunctions
 
 import android.util.Log
-import fi.tuni.androidapp.RequestJSONObject
+import fi.tuni.androidapp.customFunctions.RequestJSONObject
 import java.io.BufferedInputStream
 import java.io.InputStream
 import java.net.HttpURLConnection

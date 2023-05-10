@@ -8,6 +8,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import fi.tuni.androidapp.customFunctions.Person
 import fi.tuni.androidapp.customFunctions.updateCall
 
 

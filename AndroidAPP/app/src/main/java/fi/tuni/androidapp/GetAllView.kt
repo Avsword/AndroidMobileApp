@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import fi.tuni.androidapp.customFunctions.addDeleteButton
 import fi.tuni.androidapp.customFunctions.addEditButton
 import fi.tuni.androidapp.customFunctions.deleteCall
+import fi.tuni.androidapp.customFunctions.fetch
 
 
 class GetAllView: Fragment(R.layout.getallview) {
