@@ -18,8 +18,8 @@ class MainActivity : AppCompatActivity() {
         val GetAllView = GetAllView()
         val SearchView = SearchView()
         val AddView = AddView()
-        val UpdateView = UpdateView()
-        val DeleteView = DeleteView()
+//        val UpdateView = UpdateView()
+//        val DeleteView = DeleteView()
         setCurrentFragment(GetAllView)
 
         bottomNavigationView.setOnItemSelectedListener {
@@ -27,15 +27,17 @@ class MainActivity : AppCompatActivity() {
                 R.id.allUsers->setCurrentFragment(GetAllView)
                 R.id.search->setCurrentFragment(SearchView)
                 R.id.add->setCurrentFragment(AddView)
-                R.id.update->setCurrentFragment(UpdateView)
-                R.id.delete->setCurrentFragment(DeleteView)
+//                R.id.update->setCurrentFragment(UpdateView)
+//                R.id.delete->setCurrentFragment(DeleteView)
             }
             true
         }
+
     }
     private fun setCurrentFragment(fragment:Fragment)=
         supportFragmentManager.beginTransaction().apply {
             replace(R.id.FrameLayout,fragment)
             commit()
         }
+
 }
