@@ -13,6 +13,9 @@ import android.widget.TableLayout
 import android.widget.TextView
 import androidx.core.view.setPadding
 import androidx.fragment.app.Fragment
+import fi.tuni.androidapp.customFunctions.addDeleteButton
+import fi.tuni.androidapp.customFunctions.addEditButton
+import fi.tuni.androidapp.customFunctions.deleteCall
 
 
 class GetAllView: Fragment(R.layout.getallview) {
@@ -42,13 +45,11 @@ class GetAllView: Fragment(R.layout.getallview) {
                     names.gravity = Gravity.CENTER_VERTICAL
                     userBlock.addView(names)
 
-                    // Edit Button
-                    val editButton = ImageButton(requireContext())
-                    editButton.setImageResource(R.drawable.ic_update)
-                    editButton.setBackgroundResource(R.color.transparent)
-                    userBlock.addView(editButton)
+                    addEditButton(person.id, linearLayout, userBlock, requireActivity()
+                        ,requireContext())
 
-
+                    addDeleteButton(person.id, linearLayout, userBlock, requireActivity()
+                    ,requireContext())
 
                     linearLayout.addView(userBlock)
                 }

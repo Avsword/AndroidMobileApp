@@ -12,5 +12,5 @@
     <color name="lightpurple" >#B7AEF2</color>
     <color name="lightpink">#F2B3D6</color>
     <color name="transparent" >#00FFFFFF</color>
-
+    <color name="darkened" >#83373737</color>
 </resources>

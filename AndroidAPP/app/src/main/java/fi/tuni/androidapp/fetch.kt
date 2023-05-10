@@ -23,7 +23,6 @@ fun fetch(callback: (result:RequestJSONObject) -> Unit): Unit {
             urlConnection.disconnect()
         }
         callback(result!!)
-
     }
 }
 
