@@ -1,6 +1,7 @@
 package fi.tuni.androidapp
 
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -13,6 +14,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        // Hide the action bar
+        supportActionBar?.hide()
 
         val bottomNavigationView : BottomNavigationView = findViewById(R.id.bottomNavigationView);
         val GetAllView = GetAllView()
