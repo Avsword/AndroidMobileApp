@@ -14,14 +14,21 @@ import androidx.core.content.ContextCompat.startActivity
 import fi.tuni.androidapp.*
 
 
-fun addEditButton(id: Int, layout: LinearLayout,userBlock: LinearLayout,activity: Activity, context: Context): Unit {
+fun addEditButton(person: Person, layout: LinearLayout,userBlock: LinearLayout,activity: Activity, context: Context): Unit {
     // Edit Button
     val editButton = ImageButton(context)
     editButton.setImageResource(R.drawable.ic_update)
     editButton.setBackgroundResource(R.color.transparent)
     editButton.setOnClickListener {
         // https://developer.android.com/reference/android/widget/PopupWindow
-        startActivity(context, Intent(activity, UpdateView::class.java), Bundle())
+        val intent = Intent(activity, UpdateView::class.java)
+        intent.putExtra("id", person.id)
+        intent.putExtra("firstName", person.firstName)
+        intent.putExtra("lastName", person.lastName)
+        intent.putExtra("age",person.age)
+        intent.putExtra("gender", person.gender)
+
+        startActivity(context, intent, Bundle())
     }
 
     userBlock.addView(editButton)

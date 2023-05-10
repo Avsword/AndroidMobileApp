@@ -45,7 +45,7 @@ class GetAllView: Fragment(R.layout.getallview) {
                     names.gravity = Gravity.CENTER_VERTICAL
                     userBlock.addView(names)
 
-                    addEditButton(person.id, linearLayout, userBlock, requireActivity()
+                    addEditButton(person, linearLayout, userBlock, requireActivity()
                         ,requireContext())
 
                     addDeleteButton(person.id, linearLayout, userBlock, requireActivity()
