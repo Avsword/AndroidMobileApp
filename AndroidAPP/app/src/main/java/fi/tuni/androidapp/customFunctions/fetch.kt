@@ -46,8 +46,3 @@ private fun readAndParseStream(input: InputStream): RequestJSONObject {
 }
 
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class Person(val id:Int=0,val firstName:String="",val lastName:String="",val age:Int=0,val gender:String="")
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class RequestJSONObject(var users: MutableList<Person>? = null)

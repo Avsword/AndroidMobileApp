@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    android:id="@+id/addViewLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/AddViewText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ADD" />
+    android:layout_height="match_parent"
+    android:paddingHorizontal="25dp"
+    >
 </LinearLayout>

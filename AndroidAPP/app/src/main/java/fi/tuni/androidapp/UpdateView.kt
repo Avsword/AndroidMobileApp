@@ -38,13 +38,13 @@ class UpdateView: Activity() {
 
         val updateButton = findViewById<Button>(R.id.updateButton)
         updateButton.setOnClickListener {
-            if(updateFirstName.text.toString() == "" || updateFirstName.toString().contains("[0-9]".toRegex())){
+            if(updateFirstName.text.toString() == "" || updateFirstName.toString().contains("[a-z]".toRegex())){
                 updateFirstName.setText(intent.getStringExtra("firstName").toString())
             }
-            if(updateLastName.text.toString() == "" || updateLastName.toString().contains("[0-9]".toRegex())){
+            if(updateLastName.text.toString() == "" || updateLastName.toString().contains("[a-z]".toRegex())){
                 updateLastName.setText(intent.getStringExtra("lastName").toString())
             }
-            if(updateAge.text.toString() == "" || updateLastName.toString().lowercase().contains("[a-z]".toRegex())){
+            if(updateAge.text.toString() == "" || updateLastName.toString().lowercase().contains("[0-9]".toRegex())){
                 updateAge.setText(intent.getIntExtra("age", 0).toString())
             }
             if(updateGender.text.toString() == "" || (updateGender.text.toString().lowercase() != "male" || updateGender.text.toString().lowercase() != "female")){
