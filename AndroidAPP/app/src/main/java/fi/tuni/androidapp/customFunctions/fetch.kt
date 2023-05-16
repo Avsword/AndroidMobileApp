@@ -27,7 +27,7 @@ fun fetch(callback: (result:RequestJSONObject) -> Unit): Unit {
 }
 
 // https://stackoverflow.com/questions/8376072/whats-the-readstream-method-i-just-can-not-find-it-anywhere
-private fun readAndParseStream(input: InputStream): RequestJSONObject {
+fun readAndParseStream(input: InputStream): RequestJSONObject {
     // We're using a stringbuilder to get the data from the inputstream
     val sb = StringBuilder()
     // Using the bufferedreader we will read the input

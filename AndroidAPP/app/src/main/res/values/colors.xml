@@ -14,4 +14,5 @@
     <color name="transparent" >#00FFFFFF</color>
     <color name="darkened" >#83373737</color>
     <color name="success" >#11FF00</color>
+    <color name="failure" >#730202</color>
 </resources>
