@@ -71,8 +71,6 @@ class AddView:Fragment(R.layout.addview) {
                     activity?.runOnUiThread {
                         Toast.makeText(context, "${addFirstName.text.toString()} Successfully added!", Toast.LENGTH_SHORT).show()
                     }
-
-
                 }
                 Log.d("addCall", it.toString())
             }

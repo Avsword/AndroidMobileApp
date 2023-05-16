@@ -38,6 +38,7 @@ class GetAllView: Fragment(R.layout.getallview) {
                     val userBlock = LinearLayout(requireContext())
                     userBlock.orientation = LinearLayout.HORIZONTAL
                     userBlock.gravity = Gravity.CENTER_VERTICAL
+
                     // https://stackoverflow.com/questions/9685658/add-padding-on-view-programmatically
                     userBlock.setPadding(15)
                     // First and Last Name
@@ -46,12 +47,19 @@ class GetAllView: Fragment(R.layout.getallview) {
                     names.gravity = Gravity.CENTER_VERTICAL
                     userBlock.addView(names)
 
-                    addEditButton(person, linearLayout, userBlock, requireActivity()
+                    val buttonsBlock = LinearLayout(requireContext())
+                    buttonsBlock.gravity = Gravity.END
+                    buttonsBlock.layoutParams = LinearLayout.LayoutParams(
+                        LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT
+                    )
+                    buttonsBlock.setPaddingRelative(0,0,30,0)
+                    addEditButton(person, linearLayout, buttonsBlock, requireActivity()
                         ,requireContext())
 
-                    addDeleteButton(person.id, linearLayout, userBlock, requireActivity()
+                    addDeleteButton(person.id, linearLayout, buttonsBlock, requireActivity()
                     ,requireContext())
-
+                    userBlock.addView(buttonsBlock)
                     linearLayout.addView(userBlock)
                 }
             }
