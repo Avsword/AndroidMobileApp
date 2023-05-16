@@ -7,7 +7,7 @@ import android.widget.LinearLayout
 import fi.tuni.androidapp.R
 import kotlin.concurrent.thread
 
-fun addDeleteButton(id: Int, layout: LinearLayout,userBlock: LinearLayout,activity: Activity, context: Context): Unit {
+fun addDeleteButton(id: Int, layout: LinearLayout,userBlock: LinearLayout,activity: Activity, context: Context, removeLayout: LinearLayout): Unit {
     val deleteButton = ImageButton(context)
     deleteButton.setImageResource(R.drawable.ic_delete)
     deleteButton.setBackgroundResource(R.color.transparent)
@@ -16,8 +16,8 @@ fun addDeleteButton(id: Int, layout: LinearLayout,userBlock: LinearLayout,activi
             deleteCall(id)
             // https://stackoverflow.com/questions/25580944/how-can-i-add-and-remove-element-dynamically-from-linear-layout
             // I'm adding the stackoverflow urls here so that its kind of proof that
-            // I dont copypaste from stackoverflow
-            layout.removeView(userBlock)
+            // I dont copypaste from gpt
+            layout.removeView(removeLayout)
         }
     }
     userBlock.addView(deleteButton)

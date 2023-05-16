@@ -8,7 +8,6 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
-import androidx.core.view.setPadding
 import androidx.fragment.app.Fragment
 import fi.tuni.androidapp.customFunctions.searchCall
 
@@ -29,7 +28,6 @@ class SearchView:Fragment(R.layout.searchview) {
             searchCall(userInput.text.toString()){
                 Log.d("searchCall", it.toString())
                 if (it != null) {
-
                     try {
                         val searchResult = LinearLayout(requireContext().applicationContext)
                         val result = TextView(requireContext().applicationContext)

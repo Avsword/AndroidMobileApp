@@ -58,7 +58,7 @@ class GetAllView: Fragment(R.layout.getallview) {
                         ,requireContext())
 
                     addDeleteButton(person.id, linearLayout, buttonsBlock, requireActivity()
-                    ,requireContext())
+                    ,requireContext(), userBlock)
                     userBlock.addView(buttonsBlock)
                     linearLayout.addView(userBlock)
                 }
