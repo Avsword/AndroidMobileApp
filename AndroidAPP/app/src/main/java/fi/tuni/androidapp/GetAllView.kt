@@ -18,11 +18,16 @@ import fi.tuni.androidapp.customFunctions.addEditButton
 import fi.tuni.androidapp.customFunctions.deleteCall
 import fi.tuni.androidapp.customFunctions.fetch
 
-
+/**
+ * View of all of the users in a list-format.
+ */
 class GetAllView: Fragment(R.layout.getallview) {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
+
+    /**
+     * When created, fetch the users and for every user
+     *      create a "block" with the users info + update & delete buttons.
+     *      Then add the block in to the LinearLayout.
+     */
     @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
