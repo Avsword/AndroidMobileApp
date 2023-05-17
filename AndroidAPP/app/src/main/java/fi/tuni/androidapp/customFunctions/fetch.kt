@@ -10,6 +10,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 import com.fasterxml.jackson.databind.ObjectMapper
 import kotlin.concurrent.thread
 
+/**
+ * Fetches all users
+ *
+ * @param callback Callback for the response with a formatted Person.
+ */
 fun fetch(callback: (result:RequestJSONObject) -> Unit): Unit {
     thread{
         print("Fetching started")
@@ -26,6 +31,12 @@ fun fetch(callback: (result:RequestJSONObject) -> Unit): Unit {
     }
 }
 
+/**
+ * Reads an inputstream and returns a parsed JSONObject
+ *
+ * @param input The response we initially get from an HTTPUrlconnection.
+ * @return Returns a JSONObject with only the values of users we want.
+ */
 // https://stackoverflow.com/questions/8376072/whats-the-readstream-method-i-just-can-not-find-it-anywhere
 fun readAndParseStream(input: InputStream): RequestJSONObject {
     // We're using a stringbuilder to get the data from the inputstream

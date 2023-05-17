@@ -6,6 +6,16 @@ import java.net.HttpURLConnection
 import java.net.URL
 import kotlin.concurrent.thread
 
+/**
+ * Adds a new user.
+ *
+ * addCall starts a new thread and creates a JSONObject
+ *  based on the person param. Then it establishes an
+ *  httpurlconnection to post the new user.
+ *
+ * @param person Contains data of a user in a specific format.
+ * @param callback Defines what we do with the response code.
+ */
 fun addCall(person: AddPerson, callback: (responseCode:Int)->Unit){
     thread {
         var jsonPerson = JSONObject()

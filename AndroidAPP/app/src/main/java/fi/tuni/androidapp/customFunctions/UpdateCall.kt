@@ -7,6 +7,12 @@ import java.net.HttpURLConnection
 import java.net.URL
 import kotlin.concurrent.thread
 
+/**
+ * PUT Call with the user data given.
+ *
+ * @param person Data with the necessary info.
+ * @param callback What we do with the responseCode.
+ */
 fun updateCall(person: fi.tuni.androidapp.customFunctions.Person, callback: (responseCode:Int)->Unit){
     thread {
         var jsonPerson = JSONObject()
@@ -35,7 +41,5 @@ fun updateCall(person: fi.tuni.androidapp.customFunctions.Person, callback: (res
         Log.d("UpdateCall",httpConnection.responseMessage)
         callback(httpConnection.responseCode)
         httpConnection.disconnect()
-
-
     }
 }
