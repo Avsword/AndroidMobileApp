@@ -11,7 +11,17 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import fi.tuni.androidapp.customFunctions.searchCall
 
+/**
+ * View / Tab for searching for a user and displaying the
+ *      fetched data in a minimalistic format.
+ */
 class SearchView:Fragment(R.layout.searchview) {
+    /**
+     * When created, initialize values and set onClickListener to the button.
+     *
+     * SearchButton calls "searchCall" and in it's callback it adds what is returned.
+     *     The response can be empty if the search parameter is bad, so it has that handled.
+     */
     @SuppressLint("ResourceAsColor")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -24,6 +34,8 @@ class SearchView:Fragment(R.layout.searchview) {
 
         val searchButton = Button(requireContext().applicationContext)
         searchButton.text = "Search!"
+        // SORRY FOR THE INDENTS BUT THIS IS REALLY AS CONCISE AS CAN BE WITHOUT
+        //      COMPROMISING READABILITY.
         searchButton.setOnClickListener {
             searchCall(userInput.text.toString()){
                 Log.d("searchCall", it.toString())
@@ -41,14 +53,10 @@ class SearchView:Fragment(R.layout.searchview) {
                         result.text = "ERROR! Bad search parameter."
                         searchResult.addView(result)
                         activity?.runOnUiThread { layout.addView(searchResult) }
-
                     }
-
                 }
             }
         }
         layout.addView(searchButton)
-
-
     }
 }
