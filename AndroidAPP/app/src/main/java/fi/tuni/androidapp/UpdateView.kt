@@ -11,8 +11,14 @@ import android.widget.TextView
 import fi.tuni.androidapp.customFunctions.Person
 import fi.tuni.androidapp.customFunctions.updateCall
 
-
+/**
+ * View for updating an existing user. Starts from "addEditButton"-click
+ */
 class UpdateView: Activity() {
+    /**
+     * onCreate initializes each of the values and sets hints based on the intent values given.
+     * Also sets the updateButton's onclickListener to call "updateCall" with the values entered.
+     */
     @SuppressLint("ResourceAsColor")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
