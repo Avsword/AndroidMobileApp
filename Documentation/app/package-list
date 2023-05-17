@@ -1,0 +1,44 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:fi.tuni.androidapp.customFunctions////PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/index.html
+$dokka.location:fi.tuni.androidapp.customFunctions//addCall/#fi.tuni.androidapp.customFunctions.AddPerson#kotlin.Function1[kotlin.Int,kotlin.Unit]/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/add-call.html
+$dokka.location:fi.tuni.androidapp.customFunctions//addDeleteButton/#kotlin.Int#android.widget.LinearLayout#android.widget.LinearLayout#android.app.Activity#android.content.Context#android.widget.LinearLayout/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/add-delete-button.html
+$dokka.location:fi.tuni.androidapp.customFunctions//addEditButton/#fi.tuni.androidapp.customFunctions.Person#android.widget.LinearLayout#android.widget.LinearLayout#android.app.Activity#android.content.Context/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/add-edit-button.html
+$dokka.location:fi.tuni.androidapp.customFunctions//deleteCall/#kotlin.Int/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/delete-call.html
+$dokka.location:fi.tuni.androidapp.customFunctions//fetch/#kotlin.Function1[fi.tuni.androidapp.customFunctions.RequestJSONObject,kotlin.Unit]/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/fetch.html
+$dokka.location:fi.tuni.androidapp.customFunctions//readAndParseStream/#java.io.InputStream/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/read-and-parse-stream.html
+$dokka.location:fi.tuni.androidapp.customFunctions//searchCall/#kotlin.String#kotlin.Function1[fi.tuni.androidapp.customFunctions.RequestJSONObject?,kotlin.Unit]/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/search-call.html
+$dokka.location:fi.tuni.androidapp.customFunctions//updateCall/#fi.tuni.androidapp.customFunctions.Person#kotlin.Function1[kotlin.Int,kotlin.Unit]/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/update-call.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson///PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/index.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson/AddPerson/#kotlin.String#kotlin.String#kotlin.Int#kotlin.String/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/-add-person.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson/age/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/age.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson/firstName/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/first-name.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson/gender/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/gender.html
+$dokka.location:fi.tuni.androidapp.customFunctions/AddPerson/lastName/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-add-person/last-name.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person///PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/index.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/Person/#kotlin.Int#kotlin.String#kotlin.String#kotlin.Int#kotlin.String/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/-person.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/age/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/age.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/firstName/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/first-name.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/gender/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/gender.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/id/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/id.html
+$dokka.location:fi.tuni.androidapp.customFunctions/Person/lastName/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-person/last-name.html
+$dokka.location:fi.tuni.androidapp.customFunctions/RequestJSONObject///PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-request-j-s-o-n-object/index.html
+$dokka.location:fi.tuni.androidapp.customFunctions/RequestJSONObject/RequestJSONObject/#kotlin.collections.MutableList[fi.tuni.androidapp.customFunctions.Person]?/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-request-j-s-o-n-object/-request-j-s-o-n-object.html
+$dokka.location:fi.tuni.androidapp.customFunctions/RequestJSONObject/users/#/PointingToDeclaration/app/fi.tuni.androidapp.customFunctions/-request-j-s-o-n-object/users.html
+$dokka.location:fi.tuni.androidapp////PointingToDeclaration/app/fi.tuni.androidapp/index.html
+$dokka.location:fi.tuni.androidapp/AddView///PointingToDeclaration/app/fi.tuni.androidapp/-add-view/index.html
+$dokka.location:fi.tuni.androidapp/AddView/AddView/#/PointingToDeclaration/app/fi.tuni.androidapp/-add-view/-add-view.html
+$dokka.location:fi.tuni.androidapp/AddView/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/fi.tuni.androidapp/-add-view/on-view-created.html
+$dokka.location:fi.tuni.androidapp/GetAllView///PointingToDeclaration/app/fi.tuni.androidapp/-get-all-view/index.html
+$dokka.location:fi.tuni.androidapp/GetAllView/GetAllView/#/PointingToDeclaration/app/fi.tuni.androidapp/-get-all-view/-get-all-view.html
+$dokka.location:fi.tuni.androidapp/GetAllView/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/fi.tuni.androidapp/-get-all-view/on-view-created.html
+$dokka.location:fi.tuni.androidapp/MainActivity///PointingToDeclaration/app/fi.tuni.androidapp/-main-activity/index.html
+$dokka.location:fi.tuni.androidapp/MainActivity/MainActivity/#/PointingToDeclaration/app/fi.tuni.androidapp/-main-activity/-main-activity.html
+$dokka.location:fi.tuni.androidapp/SearchView///PointingToDeclaration/app/fi.tuni.androidapp/-search-view/index.html
+$dokka.location:fi.tuni.androidapp/SearchView/SearchView/#/PointingToDeclaration/app/fi.tuni.androidapp/-search-view/-search-view.html
+$dokka.location:fi.tuni.androidapp/SearchView/onViewCreated/#android.view.View#android.os.Bundle?/PointingToDeclaration/app/fi.tuni.androidapp/-search-view/on-view-created.html
+$dokka.location:fi.tuni.androidapp/UpdateView///PointingToDeclaration/app/fi.tuni.androidapp/-update-view/index.html
+$dokka.location:fi.tuni.androidapp/UpdateView/UpdateView/#/PointingToDeclaration/app/fi.tuni.androidapp/-update-view/-update-view.html
+fi.tuni.androidapp
+fi.tuni.androidapp.customFunctions
+
