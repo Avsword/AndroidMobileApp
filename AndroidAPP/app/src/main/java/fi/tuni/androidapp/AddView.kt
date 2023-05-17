@@ -15,13 +15,21 @@ import fi.tuni.androidapp.customFunctions.Person
 import fi.tuni.androidapp.customFunctions.addCall
 import fi.tuni.androidapp.customFunctions.updateCall
 
+/**
+ * Tab for adding a new User.
+ *
+ * Adds textfields and radio buttons for the name, age and gender.
+ * Also adds the "add-button"
+ */
 class AddView:Fragment(R.layout.addview) {
 
+    /**
+     * Initializes every field and adds clickListeners and onChange listeners
+     * to the buttons and textfields.
+     */
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var layout:LinearLayout = view.findViewById(R.id.addViewLayout)
-
-        val addSuccess = TextView(requireContext()).setText("")
         val addFirstName = EditText(requireContext())
         addFirstName.hint = "First name"
 
@@ -83,9 +91,15 @@ class AddView:Fragment(R.layout.addview) {
         addAge.doAfterTextChanged { inputChanged(addFirstName, addLastName, addAge, submitButton) }
     }
 
-    private fun submitPress(addFirstName: EditText, addLastName: EditText, addAge: EditText, genderRadioGroup: RadioGroup): Unit {
-        Log.d("addview","pressed")
-    }
+    /**
+     * Function runs when a textfield is edited.
+     * Determines whether or not values are valid - if they are, enable the button.
+     *
+     * @param addFirstName First name textfield
+     * @param addLastName Last name textfield
+     * @param addAge Age textfield
+     * @param submitButton "Add"-button to be enabled/disabled.
+     */
     @SuppressLint("ResourceAsColor")
     private fun inputChanged(addFirstName: EditText, addLastName: EditText, addAge: EditText, submitButton: Button):Unit{
         // Guard clauses to validate input etc etc
